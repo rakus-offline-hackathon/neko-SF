@@ -13,7 +13,7 @@
 
 ## 構成
 * Hubot
-* Slack(LINE BOTに挑戦しようかと思ったが残念)
+* Slack(LINE BOTに挑戦しようかと思ったが断念)
 
 ## 入力
 * 猫の種類名
