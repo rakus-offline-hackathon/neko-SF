@@ -9,5 +9,5 @@ module.exports = (robot) ->
             .header('Accept','application/json')
             .get() (err,response,body) ->
                 data = JSON.parse body
-                data = data['info']['photo'][0]['image_url']
+                data = data['info']['photo'][Math.floor( Math.random() * 99 )]['image_url']
                 res.send "#{data}"
