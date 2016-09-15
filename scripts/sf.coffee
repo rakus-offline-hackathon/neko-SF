@@ -8,6 +8,7 @@ module.exports = (robot) ->
         robot.http(url)
             .header('Accept','application/json')
             .get() (err,response,body) ->
-                data = JSON.parse body
-                data = data['info']['photo'][Math.floor( Math.random() * 99 )]['image_url']
-                res.send "#{data}"
+                datas = JSON.parse(body)['info']['photo']
+                data = res.random(datas)
+                res.send data['image_url']
+
