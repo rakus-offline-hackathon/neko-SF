@@ -6,4 +6,4 @@ export PORT=8080
 
 npm install
 
-forever start -c coffee node_modules/.bin/hubot --adapter \slack
+./bin/hubot --adapter \slack
