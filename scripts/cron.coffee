@@ -6,7 +6,7 @@ fs = require ('fs')
 module.exports = (robot) ->
 
   # Crontabの設定方法と一緒 *(sec) *(min) *(hour) *(day) *(month) *(day of the week)
-  new cronJob('0 0 */3 * * *', () ->
+  new cronJob('0 0 */3 * * 1-5', () ->
     array = ["1", "2", "3"]
     name = array[Math.floor( Math.random() * 3 )]
     path = "img/" + name + ".jpg"
