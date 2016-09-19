@@ -9,7 +9,7 @@ module.exports = (robot) ->
   new cronJob('0 0 */3 * * 1-5', () ->
 
     # TODO 動的になんとかしたい。
-    array = ["1"..."16"]
+    array = [1..16]
     name = array[Math.floor( Math.random() * 16 )]
 
     # TODO 動的にできたらファイルパスをサーバー上に固定したい
