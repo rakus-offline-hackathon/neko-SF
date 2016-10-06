@@ -10,4 +10,4 @@ export API_TOKEN=
 
 npm install
 
-forever start -c coffee node_modules/.bin/hubot --adapter \slack
+forever start -c coffee node_modules/.bin/hubot --adapter \slack --uid \neko
